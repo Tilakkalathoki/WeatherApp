@@ -66,6 +66,9 @@ const WeatherApp = () => {
                 else if (data.weather[0].icon === "13d" || data.weather[0].icon === "13n") {
                     setWicon(snow_icon);
                 }
+                else if (data.weather[0].icon === "50d" || data.weather[0].icon === "50n") {
+                    setWicon(cloud_icon);
+                }
                 else {
                     setWicon(clear_icon);
                 }
